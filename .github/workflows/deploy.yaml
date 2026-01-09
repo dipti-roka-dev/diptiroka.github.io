@@ -3,13 +3,13 @@ name: Deploy Vite site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main # Trigger on pushes to main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Required to push to gh-pages branch
 
     steps:
       - name: Checkout repository
