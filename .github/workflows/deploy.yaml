@@ -1,17 +1,19 @@
-name: Deploy Vite Site to GitHub Pages
+name: Deploy Vite site to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # trigger deploy on every push to main
+      - main  # Deploy when main changes
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for gh-pages push
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -21,11 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Vite project
+      - name: Build project
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
