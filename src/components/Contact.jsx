@@ -19,11 +19,11 @@ const Contact = () => {
       <p>
         LinkedIn:{' '}
         <a
-          href="https://www.linkedin.com/in/dipti-roka-chhetri/"
+          href="https://www.linkedin.com/in/dipti-roka/"
           className="text-blue-500"
           target="_blank"
         >
-          linkedin.com/in/dipti-roka-chhetri
+          linkedin.com/in/dipti-roka
         </a>
       </p>
     </section>
