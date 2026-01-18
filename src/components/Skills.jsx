@@ -23,7 +23,7 @@ const Skills = () => {
                   key={skill}
                   style={{
                     padding: '4px 8px',
-                    backgroundColor: '#e5e7eb', // gray-200
+                    backgroundColor: '#065f5f', // very dark teal
                     borderRadius: '9999px', // rounded-full
                     display: 'inline-block', // ensures spacing works
                   }}

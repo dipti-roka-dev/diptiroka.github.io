@@ -9,7 +9,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-const App = () => {
+const MainPage = () => {
   const sections = [
     <Header key="header" />,
     <About key="about" />,
@@ -50,4 +50,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MainPage;

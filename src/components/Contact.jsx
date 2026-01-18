@@ -5,7 +5,8 @@ const Contact = () => {
     <section className="p-6">
       <h2 className="text-3xl font-bold mb-4">Let's connect</h2>
       <p>
-      I'm actively exploring US remote/full-time opportunities—especially in gaming, fintech, or SaaS with modern stacks.
+        I'm actively exploring US remote/full-time opportunities—especially in gaming, fintech, or
+        SaaS with modern stacks.
       </p>
       <p>
         Email:{' '}
