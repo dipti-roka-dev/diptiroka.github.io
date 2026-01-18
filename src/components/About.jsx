@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="p-6 text-center">
+    <section className="p-6">
       <h2 className="text-3xl font-bold mb-2">About Me</h2>
       <p className="text-lg max-w-xl mx-auto">
         Passionate full-stack software engineer with commercial experience building scalable,

@@ -21,7 +21,7 @@ const projects = [
 const Projects = () => {
   return (
     <section className="p-6">
-      <h2 className="text-3xl font-bold mb-4 text-center">Projects</h2>
+      <h2 className="text-3xl font-bold mb-4">Projects</h2>
       <div className="grid md:grid-cols-2 gap-4">
         {projects.map((proj, idx) => (
           <ProjectCard key={idx} {...proj} />

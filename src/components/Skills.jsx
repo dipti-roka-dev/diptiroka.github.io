@@ -11,13 +11,13 @@ const skills = {
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold mb-8 text-center">Skills</h1>
+    <div className="flex flex-col">
+      <h1 className="text-3xl font-bold mb-8">Skills</h1>
       <div className="p-6">
         {Object.entries(skills).map(([category, skillList]) => (
-          <div key={category} className="mb-6" text-center>
+          <div key={category} className="mb-6">
             <h3 className="text-lg font-semibold mb-2">{category}</h3>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap gap-3">
               {skillList.map((skill) => (
                 <span
                   key={skill}
