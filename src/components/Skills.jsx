@@ -11,15 +11,23 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section className="p-6 text-center">
-      <h2 className="text-3xl font-bold mb-6">Skills</h2>
-      <div className="flex flex-wrap justify-center gap-8">
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold mb-8 text-center">Skills</h1>
+      <div className="p-6">
         {Object.entries(skills).map(([category, skillList]) => (
-          <div key={category} className="text-left">
-            <h3 className="text-xl font-semibold mb-2">{category}</h3>
-            <div className="flex flex-wrap gap-2">
+          <div key={category} className="mb-6" text-center>
+            <h3 className="text-lg font-semibold mb-2">{category}</h3>
+            <div className="flex flex-wrap justify-center gap-3">
               {skillList.map((skill) => (
-                <span key={skill} className="px-3 py-1 bg-gray-200 rounded-lg text-sm font-medium">
+                <span
+                  key={skill}
+                  style={{
+                    padding: '4px 8px',
+                    backgroundColor: '#e5e7eb', // gray-200
+                    borderRadius: '9999px', // rounded-full
+                    display: 'inline-block', // ensures spacing works
+                  }}
+                >
                   {skill}
                 </span>
               ))}
@@ -27,7 +35,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
